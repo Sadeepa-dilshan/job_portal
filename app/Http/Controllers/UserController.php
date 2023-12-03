@@ -57,6 +57,8 @@ class UserController extends Controller
     public function login()
         {
             return view('user.login');
+
+            
         }
 
     public function postLogin(Request $request)
@@ -77,4 +79,5 @@ class UserController extends Controller
         auth()->logout();
         return redirect()->route('login');
     }
+    
 }

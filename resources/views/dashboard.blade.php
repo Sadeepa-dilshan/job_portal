@@ -31,7 +31,7 @@
                 <p class="text-center mt-3 lead">
                     Post job
                 </p>
-                <button class="btn btn-primary float-end">View</button>
+                <a href="{{route('create.post')}}" class="btn btn-primary float-end">View</a>
             </div>
         </div>
 
@@ -55,6 +55,9 @@
     </div>
     <a href="{{route('dashboard.mail')}}" class="mt-5 btn btn-lg btn-success btn-rounded">Find Your Job</a>
 </div>
+
+{{-- <a class="nav-link" href="{{route('job.post')}}">Post job</a> --}}
+
 <style>
     .card-counter {
         box-shadow: 2px 2px 10px #DADADA;

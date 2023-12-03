@@ -73,7 +73,12 @@ Route::get('job/create', [PostJobController::class,'create'])->name('job.create'
 
 Route::get('dashboard/mail', [DashboardController::class, 'mailme'])->name('dashboard.mail');
 
+// get category
+Route::get('/edit-categories', [DashboardController::class, 'editCategoriesForm'])->name('edit.categories');
+Route::post('/update-categories', [DashboardController::class, 'updateCategories'])->name('update.categories');
 
-
+// post job
+Route::get('dashboard/post-job', [DashboardController::class, 'createJob'])->name('create.post');
+Route::post('dashboard/post-job', [DashboardController::class, 'postJob'])->name('store.post');
 
 
